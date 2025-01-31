@@ -32,7 +32,7 @@ class QueryProcessor:
 Question: {question}
 """
         prompt = ChatPromptTemplate.from_template(template)
-        ollama_llm = "llama2:7b-chat"
+        ollama_llm = "llama3.2"
         model = ChatOllama(model=ollama_llm)
         chain = (
             RunnableParallel({"context": retriever, "question": RunnablePassthrough()})

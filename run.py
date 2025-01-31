@@ -61,4 +61,4 @@ if st.button('Get Answer'):
 # Button to reset the application state
 if st.button('Reset Application'):
     reset_application_state()
-    st.experimental_rerun()
+    st.rerun()
